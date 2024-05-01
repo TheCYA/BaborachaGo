@@ -12,11 +12,13 @@
     list-style: none;
 }
 body{
-    font-family: Borel;
     position: relative;
-    display: block;
+    font-family: Borel;
     min-height: 100vh;
-    background-color: #ec9bad;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
     color: white;
 }
 header{
@@ -30,6 +32,9 @@ a{
 }
 .hd-logo{
     padding-left: 1vw;
+}
+.hd-logo img{
+    width: 10em;
 }
 .hd-logo a{
     display: flex;
@@ -48,28 +53,32 @@ a{
     justify-content: space-between;
     height: 100%;
 }
-img{
-    width: 10em;
+nav a:hover{
+    color: #a57bb2;
 }
 main{
+    flex-grow: 1;
     display: flex;
     justify-content: space-around;
 }
 .ma-left, .ma-right{
     display: flex;
     margin-top: 15vh;
-    min-width: 300px;
-    min-height: 300px;
+    width: 300px;
+    height: 300px;
     background-color: #bb9bc5;
     justify-content: center;
     align-items: center;
+    border-radius: 6%;
 }
 .ma-left:hover, .ma-right:hover{
     background-color: #a57bb2;
 }
 footer{
-    position: absolute;
-    bottom: 0;
+    background-color:#bb9bc5;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    min-height: 50px;
     width: 100%;
 }
 .ft-container{
@@ -78,7 +87,7 @@ footer{
     margin-left: 6vw;
     margin-right: 6vw;
 }
-@media (max-width:650px) {
+@media (max-width:700px) {
     header{
         display: flex;
         flex-direction: column;
@@ -91,13 +100,11 @@ footer{
     .hd-nav{
         padding: 0%;
         margin: 0 0 2vh 0;
+        width: 80vw;
     }
     main{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .ma-left, .ma-right{
-        display: inline-block;
     }
 }
