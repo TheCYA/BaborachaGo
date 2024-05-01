@@ -38,14 +38,14 @@ img{
     width: 10em;
 }
 main{
-    padding: 3%;
+    padding: 9%;
     display: grid;
     grid-template-columns: 
     repeat(
         auto-fit,
         minmax(200px, 1fr)
     );
-    gap: 5vw;
+    gap: 40px;
 }
 main div{
     background-color: #bb9bc5;
